@@ -164,3 +164,25 @@ h2 {
 .character-hidden {
     display: none !important;
 }
+#aboutGame p, #trivia p, #play p {
+    text-align: center;
+}
+
+
+#gameGallery img:hover {
+    transform: scale(1.05);  /* leve zoom al pasar el mouse */
+    filter: brightness(1.2);  /* más brillante al hover */
+    cursor: pointer;
+}
+#gameGallery img {
+    width: 180px;       /* tamaño grande pero no gigante */
+    max-width: 80%;     /* nunca se salga de la pantalla en móviles */
+    height: auto;       /* mantiene proporciones */
+    border-radius: 10px; /* opcional: bordes redondeados */
+    transition: transform 0.3s, filter 0.3s; /* para hover */
+    display: block;
+}
+/* Centrar las listas y párrafos de secciones */
+#trivia, #play {
+    text-align: center;
+}

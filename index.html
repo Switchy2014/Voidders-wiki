@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voidder's wiki</title>
+    <link rel="stylesheet" href="voider_style.css">
+</head>
+<body>
+
+    <!-- BOTÓN DARK / LIGHT -->
+    <button id="themeToggle">🌙</button>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Voider Games</h1>
+        <p>Welcome to the world of Voider's games! 😎</p>
+    </header>
+
+    <!-- INTRO -->
+    <section id="introSection">
+        <p id="introText">Entering Voider's games gallery...</p>
+        <button id="startBtn">Enter</button>
+    </section>
+
+    <!-- GALERÍA DE JUEGOS -->
+    <section id="gamesSection" style="display: none;">
+        <h2 style="text-align: center;">Games</h2>
+
+        <!-- FILTROS -->
+        <div class="filters" style="text-align: center; margin-bottom: 20px;">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="arcade">Arcade</button>
+            <button class="filter-btn" data-filter="puzzle">Puzzle</button>
+            <button class="filter-btn" data-filter="horror">Horror</button>
+        </div>
+
+        <!-- GALERÍA -->
+        <div class="gallery" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+            <!-- Fun Clicker -->
+            <div class="game-card horror"
+                 data-name="Fun Clicker"
+                 data-desc="An pretty 'normal' clikcer game"
+                 data-sound="sounds/funclicker.mp3">
+                <a href="Fun_Clicker.html" target="_blank">
+                    <img src="FunClicker.png" alt="Fun Clicker" style="width: 200px;">
+                </a>
+            </div>
+
+            <!-- Puzzle Fun -->
+            <div class="game-card puzzle"
+                 data-name="Puzzle Fun"
+                 data-desc="Solve tricky puzzles!"
+                 data-sound="sounds/puzzle.mp3">
+                <a href="Games/Puzzle.html" target="_blank">
+                    <img src="Games/Puzzle.png" alt="Puzzle Fun" style="width: 200px;">
+                </a>
+            </div>
+
+            <!-- Scary Night -->
+            <div class="game-card horror"
+                 data-name="Scary Night"
+                 data-desc="Face your fears!"
+                 data-sound="sounds/horror.mp3">
+                <a href="Games/Horror.html" target="_blank">
+                    <img src="Games/Horror.png" alt="Scary Night" style="width: 200px;">
+                </a>
+            </div>
+
+            <!-- ESPACIOS PARA MÁS JUEGOS -->
+            <div class="game-card arcade" data-name="Game X" data-desc="Description here" data-sound="sounds/gameX.mp3">
+                <a href="Games/GameX.html" target="_blank">
+                    <img src="Games/GameX.png" alt="Game X" style="width: 200px;">
+                </a>
+            </div>
+
+            <div class="game-card puzzle" data-name="Game Y" data-desc="Description here" data-sound="sounds/gameY.mp3">
+                <a href="Games/GameY.html" target="_blank">
+                    <img src="Games/GameY.png" alt="Game Y" style="width: 200px;">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made by Cris 2026</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="voider.js"></script>
+    <script src="script_main.js"></script>
+</body>
+</html>

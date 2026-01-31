@@ -186,3 +186,14 @@ h2 {
 #trivia, #play {
     text-align: center;
 }
+/* Color normal del link */
+a {
+    color: #197312; /* Cambia a cualquier color que quieras */
+    text-decoration: none; /* Opcional: quita el subrayado */
+}
+
+/* Color cuando pasas el mouse encima */
+a:hover {
+    color: #3afb47; /* Cambia al color que quieras al hacer hover */
+    text-decoration: underline; /* Opcional: subrayado al pasar el mouse */
+}

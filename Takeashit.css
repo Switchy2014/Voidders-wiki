@@ -1,0 +1,203 @@
+/* ======================
+   GLOBAL
+====================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0015;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+    background-color: #42053d;
+    color: #fcfffd;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ======================
+   DARK / LIGHT TOGGLE
+====================== */
+#themeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: #4c0b78;
+    color: white;
+    font-size: 18px;
+    z-index: 1000;
+    transition: background 0.2s, transform 0.2s;
+}
+
+#themeToggle:hover {
+    background-color: #68076f;
+    transform: scale(1.1);
+}|||
+
+/* ======================
+   INTRO
+====================== */
+#introSection {
+    text-align: center;
+    margin-top: 100px;
+    transition: opacity 0.5s;
+}
+
+#startBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: #4c0b78;
+    color: white;
+    transition: transform 0.2s, background 0.2s;
+}
+
+#startBtn:hover {
+    background-color: #68076f;
+    transform: scale(1.05);
+}
+
+/* ======================
+   GALERÍA
+====================== */
+.gallery {
+    display: flex;          /* Visible desde el inicio */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.game-card {
+    width: 180px;
+    background-color: #222;
+    border-radius: 16px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.game-card img:hover {
+    transform: scale(1.05);
+}
+
+.play-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    background-color: #6c0858;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+    background-color: #970ac7;
+}
+
+/* ======================
+   FILTROS
+====================== */
+.filters {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    margin: 5px;
+    padding: 6px 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: #60066a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #aa1bb2;
+}
+
+/* ======================
+   CENTRADO H2
+====================== */
+h2 {
+    text-align: center;
+}
+
+/* ======================
+   OCULTAR ELEMENTOS OPCIONALES
+====================== */
+.character-hidden {
+    display: none !important;
+}
+#aboutGame p, #trivia p, #play p {
+    text-align: center;
+}
+
+
+#gameGallery img:hover {
+    transform: scale(1.05);  /* leve zoom al pasar el mouse */
+    filter: brightness(1.2);  /* más brillante al hover */
+    cursor: pointer;
+}
+#gameGallery img {
+    width: 180px;       /* tamaño grande pero no gigante */
+    max-width: 80%;     /* nunca se salga de la pantalla en móviles */
+    height: auto;       /* mantiene proporciones */
+    border-radius: 10px; /* opcional: bordes redondeados */
+    transition: transform 0.3s, filter 0.3s; /* para hover */
+    display: block;
+}
+/* Centrar las listas y párrafos de secciones */
+#trivia, #play {
+    text-align: center;
+}
+/* Link normal */
+a {
+    color: #2313ff; /* color de link sin visitar */
+    text-decoration: none;
+}
+
+/* Link cuando pasas el mouse */
+a:hover {
+    color: #3a9efb;
+}
+
+/* Link visitado */
+a:visited {
+    color: #090629; /* Cambia al color que quieras */
+}
